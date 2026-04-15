@@ -11,8 +11,8 @@ public class ParabankLogin01 {
 		Browser browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
 		Page page= browser.newPage();
 		page.navigate("https://parabank.parasoft.com/parabank/index.htm");
-		page.locator("//input[@name='username']").fill("Basab2601");
-		page.locator("//input[@name='password']").fill("BasabRoy26**");
+		page.locator("//input[@name='username']").fill("abhijeet3055");
+		page.locator("//input[@name='password']").fill("Abhi@3055");
 		page.locator("//input[@value='Log In']").click();
 		if((page.locator(".smallText")).isVisible())
 		{
